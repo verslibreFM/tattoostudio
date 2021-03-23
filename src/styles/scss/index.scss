@@ -1,11 +1,18 @@
 
+@font-face {
+  font-family: 'FinistC';
+  src: url("/src/fonts/FinistC.otf") format("opentype");
+}
+
 h2{
   text-align: center;
     font-family: FinistC;
     letter-spacing: 5px;
     font-size: 35px;
     color: $colorMenu;
+    margin: 100px 0;
 }
+
 
 //УСЛУГИ
 
@@ -45,25 +52,66 @@ h2{
 
 
 //МАСТЕРА
+
+.masters{
+  width: auto;
+  height: 700px;
+}
+
 .master-card{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.master img{
-  width: 250px;
-  border-radius: 50%;
-  height: 250px;
-  object-fit: cover;
+.master{
+  width: 350px;
+  height: 400px;
+  box-shadow: 0px 4px 92px rgba(42, 79, 160, 0.07), 0px 0.893452px 20.5494px rgba(42, 79, 160, 0.0381284), 0px 0.266004px 6.11809px rgba(42, 79, 160, 0.0232417);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 
   &:hover{
-    opacity: 0.5;
+    box-shadow: 0px -7px 80px rgba(42, 79, 160, 0.12), 0px -3.23631px 36.9864px rgba(42, 79, 160, 0.0880224), 0px -1.85174px 21.1628px rgba(42, 79, 160, 0.069806), 0px -1.124px 12.8457px rgba(42, 79, 160, 0.0544984), 0px -0.677257px 7.74008px rgba(42, 79, 160, 0.0406396), 0px -0.37714px 4.31018px rgba(42, 79, 160, 0.0275912), 0px -0.162205px 1.85378px rgba(42, 79, 160, 0.0148405);
+  }
+
+  .master__photo{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
   }
 }
+
 .master p {
   text-align: center;
 }
+
+.butt{
+  width: 170px;
+  height: 40px;
+  background-color: #244082;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+}
+
+.li{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .last-worck{
   width: auto;
@@ -81,3 +129,4 @@ h2{
 .bold{
   font-weight: bold;
 }
+
