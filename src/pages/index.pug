@@ -1,0 +1,64 @@
+extends include/layout
+append sharedVars
+    - const pageUrl = '/';
+    - const pageTitle = 'Главная';
+    - const bodyAdditionClass = '';
+    - const pageAdditionClass = 'main-page';
+block content
+    section.inner
+        h2 УСЛУГИ
+        section.services
+            //a(href='#')
+            div.consultation
+                p БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+                div.block-decor
+                    div.fon
+                    img(src=require("../images/index/consultation.svg"))
+            div.sketch
+                p ИНДИВИДУАЛЬНЫЙ ЭСКИЗ
+                div.block-decor
+                    div.fon
+                    img(src=require("../images/index/sketch.svg"))
+            div.tattoo
+                p ХУДОЖЕСТВЕННАЯ ТАТУИРОВКА
+                div.block-decor
+                    div.fon
+                    img(src=require("../images/index/tattoo.svg"))
+        h2 МАСТЕРА
+        section.masters
+            div.master-card
+                div.master
+                    img(src=require("../images/index/master-one.jpg"))
+                    p Андрей
+                div.master
+                    img(src=require("../images/index/master-two.png"))
+                    p Алиса
+                div.master
+                    img(src=require("../images/index/master-three.png"))
+                    p Антон
+        h2 ПОСЛЕДНИЕ РАБОТЫ
+        section.last-worck
+        h2 КОНТАКТЫ
+        section.contact
+            div.left-block
+                div
+                    p +7 (950) 904-34-25
+                div
+                    p Время работы :
+                    p
+                    span.bold Пн-Пт:
+                    |10:00 - 20:00
+                    p
+                    span.bold Сб-Вс:
+                    |выходной
+                div
+                    p.bold Мы в социальных сетях :
+                p Тула, ул.Демидовская #[br] (Заречье), дом 74
+            div.right-block
+                div
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.884325286542!2d37.61914501109103!3d54.21753602379962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413440964d1361c3%3A0x222dfb06b4a302e4!2z0JTQtdC80LjQtNC-0LLRgdC60LDRjyDRg9C7LiwgNzQsINCi0YPQu9CwLCDQotGD0LvRjNGB0LrQsNGPINC-0LHQuy4sIDMwMDA1Nw!5e0!3m2!1sru!2sru!4v1616440420021!5m2!1sru!2sru" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+
+
