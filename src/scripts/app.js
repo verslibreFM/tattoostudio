@@ -1,4 +1,6 @@
 
+
+//main services
 let block = document.querySelectorAll('.block-decor');
 block.forEach(function (i){
    i.addEventListener('mouseover', function (e) {
@@ -11,6 +13,7 @@ block.forEach(function (i){
    });
 });
 
+//main masters
 let but = document.querySelectorAll('.master');
 but.forEach(function (elem){
    elem.addEventListener('mouseover', function (e) {
@@ -23,6 +26,7 @@ but.forEach(function (elem){
    });
 });
 
+//main last works
 $(document).ready(function () {
    $('.next').click(function (e) {
       e.preventDefault();
@@ -55,3 +59,9 @@ $(document).ready(function () {
       prevImage.addClass('curry');
    });
 });
+
+//faq
+$(".questions-item__button").on("click", function(){
+   $(this).next().slideToggle("200");
+});
+

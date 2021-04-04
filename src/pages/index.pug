@@ -5,7 +5,7 @@ append sharedVars
     - const bodyAdditionClass = '';
     - const pageAdditionClass = 'main-page';
 block content
-    div.cub
+
     //div
         <iframe src="https://vk.com/video_ext.php?oid=-26147985&id=456239034&hash=7038095459f49b02&hd=3" width="1280" height="720" frameborder="0" allowfullscreen autoplay></iframe>
     section.inner
@@ -14,9 +14,10 @@ block content
             //a(href='#')
             div.consultation.services__block
                 p.services__title БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
-                div.block-decor
-                    div.fon
-                    img(src=require("../images/index/consultation.svg"))
+                a(href='faq.html').l-s
+                    div.block-decor
+                        div.fon
+                        img(src=require("../images/index/consultation.svg"))
             div.sketch.services__block
                 p.services__title ИНДИВИДУАЛЬНЫЙ ЭСКИЗ
                 div.block-decor

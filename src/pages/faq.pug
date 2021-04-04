@@ -1,0 +1,43 @@
+extends include/layout
+append sharedVars
+    - const pageUrl = '/';
+    - const pageTitle = 'FAQ';
+    - const bodyAdditionClass = '';
+    - const pageAdditionClass = 'main-page';
+block content
+    section.inner
+        h2.title-style-other-pages Часто задаваемые вопросы
+        section.questions
+            div.questions-container
+                div.questions-item
+                    p.questions-item__questions.q what's up, maaan
+                    button.questions-item__button.q +
+                    p.questions-item__answer what did you say, bitch
+                div.questions-item
+                    p.questions-item__questions.q Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, quia!
+                    button.questions-item__button.q +
+                    p.questions-item__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cupiditate esse in possimus provident, rerum?
+                div.questions-item
+                    p.questions-item__questions.q Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolor dolorem dolorum ducimus explicabo facilis iure laboriosam nostrum quia vero.
+                    button.questions-item__button.q +
+                    p.questions-item__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur culpa debitis deleniti dolore facilis incidunt officia praesentium qui rerum soluta suscipit ullam, voluptates voluptatibus!
+                div.questions-item
+                    p.questions-item__questions Lorem ipsum dolor sit amet, consectetur adipisicing elit ?
+                    button.questions-item__button +
+                    p.questions-item__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor inventore maiores mollitia nostrum perferendis, quo. Accusantium culpa dicta eveniet temporibus unde velit. Cum dolorem, eveniet, facere id laborum necessitatibus nemo neque numquam omnis quibusdam rerum similique soluta tempore, ut?
+                div.questions-item
+                    p.questions-item__questions Lorem ipsum dolor sit amet, consectetur adipisicing elit ?
+                    button.questions-item__button +
+                    p.questions-item__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid commodi ducimus eveniet facilis ipsa iusto magni perferendis quasi, similique.
+                div.questions-item
+                    p.questions-item__questions Lorem ipsum dolor sit amet, consectetur adipisicing elit ?
+                    button.questions-item__button +
+                    p.questions-item__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid commodi ducimus eveniet facilis ipsa iusto magni perferendis quasi, similique.
+            div.form-faq
+                h3.title-for-form Остались вопросы ?
+                form.form
+                    input.input.input--size(type='text', placeholder='имя')
+                    input.input.input--size(type='text', placeholder='адрес эл.почты')
+                    textarea.input(cols=40, rows=10, placeholder='Ваш вопрос')
+                    input.input.input-sub(type='submit', value='отправить')
+
