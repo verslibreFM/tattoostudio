@@ -5,6 +5,9 @@ append sharedVars
     - const bodyAdditionClass = '';
     - const pageAdditionClass = 'main-page';
 block content
+    div.cub
+    //div
+        <iframe src="https://vk.com/video_ext.php?oid=-26147985&id=456239034&hash=7038095459f49b02&hd=3" width="1280" height="720" frameborder="0" allowfullscreen autoplay></iframe>
     section.inner
         h2 УСЛУГИ
         section.services
@@ -29,48 +32,68 @@ block content
             div.master-card
                 div.master
                     //a(href='https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9' target="_blank")
-                    img.master__photo(src=require("../images/index/master-one.jpg"))
+                    img.master__photo(src=require("../images/index/ks-vol.jpg"))
                     div.master__wrapper
-                        p.master__name Андрей
+                        p.master__name Ксения
                         p.master__name.master__name--light черно-белый реализм
                         a.li(href='https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9' target="_blank")
                             button.butt ПОДРОБНЕЕ
                 div.master
-                    img.master__photo(src=require("../images/index/master-two.png"))
+                    img.master__photo(src=require("../images/index/ks-os.jpg"))
                     div.master__wrapper
-                        p.master__name Алиса
+                        p.master__name Ксения
                         p.master__name.master__name--light цветная татуировка
                         a.li(href='https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B8%D1%81%D0%B0' target="_blank")
                             button.butt ПОДРОБНЕЕ
                 div.master
-                    img.master__photo(src=require("../images/index/master-three.png"))
+                    img.master__photo(src=require("../images/index/maria.jpg"))
                     div.master__wrapper
-                        p.master__name Антон
-                        p.master__name.master__name--light Администратор
+                        p.master__name Мария
+                        p.master__name.master__name--light администратор
                         a.li(href='https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D1%82%D0%BE%D0%BD')
                             button.butt ПОДРОБНЕЕ
         h2 ПОСЛЕДНИЕ РАБОТЫ
         section.last-worck
+            div.prev.n
+                a(href='#')
+                    img.slider__but(src=require("../images/index/nextb.svg"))
+            div.slider
+                img.img.curry(src=require("../images/index/last/a.jpg"))
+                img.img(src=require("../images/index/last/b.jpg"))
+                img.img(src=require("../images/index/last/c.jpg"))
+                img.img(src=require("../images/index/last/d.jpg"))
+                img.img(src=require("../images/index/last/e.jpg"))
+                img.img(src=require("../images/index/last/f.jpg"))
+                img.img(src=require("../images/index/last/g.jpg"))
+                img.img(src=require("../images/index/last/h.jpg"))
+            div.next.n
+                a(href='#')
+                    img.slider__but(src=require("../images/index/nextn.svg"))
         h2 КОНТАКТЫ
-        section.contact
+        section.contact.contact-wrap
             div.contact__left-block
-                div.wrap
-                    div.map-phone
-                        img.map-phone__svg(src=require("../images/layout/footer-phone.svg"))
-                        p.map-phone__title.map-phone__title--margin +7 (950) 904-34-25
-                    div.map-phone
-                        img.map-phone__svg(src=require("../images/layout/footer-map.svg"))
-                        p.map-phone__title.map-phone__title--margin Тула, ул.Демидовская #[br] (Заречье), дом 74
-                div.working-hours
-                    p Время работы :
-                    p.inn
-                    span.bold Пн-Пт:
-                    |10:00 - 20:00
-                    p
-                    span.bold Сб-Вс:
-                    |выходной
-                div
+                div.wrap.mar
+                    div.contact-content
+                        img.contact-content__svg(src=require("../images/layout/footer-phone.svg"))
+                        p.contact-content__title +7 (950) 904-34-25
+                    div.contact-content
+                        img.contact-content__svg(src=require("../images/layout/footer-map.svg"))
+                        p.contact-content__title Тула, ул.Демидовская #[br] (Заречье), дом 74
+                div.working-hours.mar
+                    p.bold Время работы :
+                    div.ini
+                        p.bold.bold--col Пн-Пт:
+                        p.contact-content__title 10:00 - 20:00
+                    div.ini
+                        p.bold.bold--col Сб-Вс:
+                        p.contact-content__title Выходной
+                div.mar
                     p.bold Мы в социальных сетях :
+                    div.social-media
+                        a(href='https://www.instagram.com/zabey_tattoostudio/' target="_blank")
+                            img.social-media__img(src=require("../images/layout/instagram.svg"))
+                        a(href='https://vk.com/zabey_tattoostudio' target="_blank")
+                            img.social-media__img(src=require("../images/layout/vk.svg"))
             div.contact__right-block
                 div.map
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.883084943039!2d37.61873731587154!3d54.217557980170874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413440964d1361c3%3A0x222dfb06b4a302e4!2z0JTQtdC80LjQtNC-0LLRgdC60LDRjyDRg9C7LiwgNzQsINCi0YPQu9CwLCDQotGD0LvRjNGB0LrQsNGPINC-0LHQuy4sIDMwMDA1Nw!5e0!3m2!1sru!2sru!4v1616870716708!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

@@ -13,16 +13,22 @@ h2{
   color: $colorMenu;
   margin: 100px 0;
 }
-
 p{
   font-family: 'Lora', serif;
+}
+
+
+.cub{
+  width: auto;
+  height: 500px;
+  background-color: #6D7077;
 }
 
 //УСЛУГИ
 
 .services{
     width: inherit;
-    height: 350px;
+    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -36,7 +42,7 @@ p{
   align-items: center;
   //background-color: #A7BFE8;
   width: 300px;
-  height: inherit;
+  height: 250px;
 }
 
 .services__title{
@@ -75,7 +81,7 @@ p{
 
 .masters{
   width: auto;
-  height: 700px;
+  height: auto;
 }
 
 .master-card{
@@ -135,68 +141,120 @@ p{
   font-family: 'Lora', serif;
 }
 
-
 //ПОСЛЕДНИЕ РАБОТЫ
 
 .last-worck{
+  display: flex;
   width: auto;
-  height: 100px;
-  background-color: cadetblue;
+  height: 530px;
+  a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+  }
 }
 
-
+.slider{
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  .img{
+    position: absolute;
+    display: none;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
+    .img.curry{
+      display: block;
+      width: 500px;
+    }
+}
+.prev{
+  position: relative;
+  top: 200px;
+  left: 250px;
+}
+.next{
+  position: relative;
+  top: 200px;
+  right: 250px;
+}
+.slider__but{
+  width: 30px;
+  height: 30px;
+}
 
 //КОНТАКТЫ
 
-.contact__left-block{
-  width: 400px;
-  height: 270px;
-  margin-top: 140px;
-  margin-right: 50%;
-  background-color: #A7BFE8;
-  //background-color: rgba(151, 148, 148, 0.43);
-  position: absolute;
-  z-index: 2;
+.contact-wrap{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-.map-phone{
+.contact__left-block{
+  width: 350px;
+  height: auto;
+  background: linear-gradient(90deg, rgba(190, 147, 197, 0.9) 0%, rgba(123, 198, 204, 0.9) 100%);
+  position: absolute;
+  z-index: 2
+}
+.wrap{
+  display: flex;
+  flex-direction: column;
+}
+.mar{
+  margin-left: 10px;
+}
+.contact-content{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
 }
-.map-phone__title{
+.contact-content__title{
+  margin-left: 15px;
   color: white;
 }
-
-
-
-
-.working-hours{
-  span {
-    color: #3f5791;
-  }
-  p{
-    color: white;
-  }
+.ini{
+  display:flex;
+  flex-direction: row;
 }
-
-.inn{
-  color: white;
-}
-
-
-
 .bold{
   font-weight: bold;
+  color: #3f5791;
+}
+.bold--col{
+  color: rgba(0, 0, 0, 0.4);
+}
+.working-hours__title{
+  color: white;
+}
+.social-media{
+  margin-top: 20px;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+
+  .social-media__img{
+    width: 30px;
+    height: 30px;
+  }
 }
 
-
-
-
+//карта
 .contact__right-block{
   position: relative;
+  z-index: 1;
 }
 .map iframe{
   width: 1168px;;
-  height: 500px;
-  z-index: 1;
+  height: 600px;
 }
+
+
+
+
