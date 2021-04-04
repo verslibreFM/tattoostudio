@@ -1,0 +1,36 @@
+extends include/layout
+append sharedVars
+    - const pageUrl = '/';
+    - const pageTitle = 'Контакты';
+    - const bodyAdditionClass = '';
+    - const pageAdditionClass = 'main-page';
+block content
+    section.inner
+        h2.contact__title-page-contact КОНТАКТЫ
+        div.contact.contact--display
+            div.contact__info
+                div.block-map-phone.align-self
+                    div.contact-content.contact-content--margin
+                        img.contact-content__svg(src=require("../images/layout/footer-phone.svg"))
+                        p.contact-content__title +7 (950) 904-34-25
+                    div.contact-content
+                        img.contact-content__svg(src=require("../images/layout/footer-map.svg"))
+                        p.contact-content__title Тула, ул.Демидовская #[br] (Заречье), дом 74
+                div.working-hours.align-self
+                    p.bold Время работы :
+                    div.ini
+                        p.bold Пн-Пт:
+                        p.contact-content__title 10:00 - 20:00
+                    div.ini
+                        p.bold Сб-Вс:
+                        p.contact-content__title Выходной
+                div.social-media-page-contact.align-self
+                    p.bold Мы в социальных сетях :
+                    div.social-media
+                        a(href='https://www.instagram.com/zabey_tattoostudio/' target="_blank")
+                            img.social-media__img(src=require("../images/layout/instagram.svg"))
+                        a(href='https://vk.com/zabey_tattoostudio' target="_blank")
+                            img.social-media__img(src=require("../images/layout/vk.svg"))
+            div.contact__map
+                div.map
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.883084943039!2d37.61873731587154!3d54.217557980170874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413440964d1361c3%3A0x222dfb06b4a302e4!2z0JTQtdC80LjQtNC-0LLRgdC60LDRjyDRg9C7LiwgNzQsINCi0YPQu9CwLCDQotGD0LvRjNGB0LrQsNGPINC-0LHQuy4sIDMwMDA1Nw!5e0!3m2!1sru!2sru!4v1616870716708!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

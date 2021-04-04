@@ -4,40 +4,125 @@
     <title>Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
-  <link href="styles/app.css" rel="stylesheet" integrity="sha384-jPy/A1xhwQzSbBW3PIXAp/YH+jyM1B2traFr3qdgCWprPxaPz2JIWtQUYf1KG06F" crossorigin="anonymous"></head>
+  <link href="styles/app.css" rel="stylesheet" integrity="sha384-xNeU15D1ZOqZzsjyRceoRuumk/Em/8+zWCzJWMp/iNuazz7Y3Tjd+gERQiaLJr2j" crossorigin="anonymous"></head>
   <body id="zabey">
     <header class="header inner"><a href="/"><img class="header__logo" src="images/layout/logo.svg"></a>
-      <nav class="menu"><a class="menu__link" href="/">ГЛАВНАЯ</a><a class="menu__link" href="#">УСЛУГИ</a><a class="menu__link" href="#">ЗАПИСЬ</a><a class="menu__link" href="#">КОНТАКТЫ</a><a class="menu__link" href="#">FAQ</a></nav>
+      <nav class="menu"><a class="menu__link" href="/">ГЛАВНАЯ</a><a class="menu__link" href="#">ЗАПИСЬ</a><a class="menu__link" href="#">КОНТАКТЫ</a><a class="menu__link" href="#">FAQ</a></nav>
     </header>
+    <div class="cub"></div>
+    <!--div<iframe src="https://vk.com/video_ext.php?oid=-26147985&id=456239034&hash=7038095459f49b02&hd=3" width="1280" height="720" frameborder="0" allowfullscreen autoplay></iframe>
+    -->
     <section class="inner">
-      <h1>Услуги</h1>
+      <h2>УСЛУГИ</h2>
       <section class="services">
         <!--a(href='#')-->
-        <div class="consultation">
-          <p>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p><img src="images/index/consultation.svg">
+        <div class="consultation services__block">
+          <p class="services__title">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>
+          <div class="block-decor">
+            <div class="fon"></div><img src="images/index/consultation.svg">
+          </div>
         </div>
-        <div class="sketch">
-          <p>ИНДИВИДУАЛЬНЫЙ ЭСКИЗ</p><img src="images/index/sketch.svg">
+        <div class="sketch services__block">
+          <p class="services__title">ИНДИВИДУАЛЬНЫЙ ЭСКИЗ</p>
+          <div class="block-decor">
+            <div class="fon"></div><img src="images/index/sketch.svg">
+          </div>
         </div>
-        <div class="tattoo">
-          <p>ХУДОЖЕСТВЕННАЯ ТАТУИРОВКА</p><img src="images/index/tattoo.svg">
+        <div class="tattoo services__block">
+          <p class="services__title">ХУДОЖЕСТВЕННАЯ ТАТУИРОВКА</p>
+          <div class="block-decor">
+            <div class="fon"></div><img src="images/index/tattoo.svg">
+          </div>
+        </div>
+      </section>
+      <h2>МАСТЕРА</h2>
+      <section class="masters">
+        <div class="master-card">
+          <div class="master">
+            <!--a(href='https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9' target="_blank")--><img class="master__photo" src="images/index/ks-vol.jpg">
+            <div class="master__wrapper">
+              <p class="master__name">Ксения</p>
+              <p class="master__name master__name--light">черно-белый реализм</p><a class="li" href="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9" target="_blank">
+                <button class="butt">ПОДРОБНЕЕ</button></a>
+            </div>
+          </div>
+          <div class="master"><img class="master__photo" src="images/index/ks-os.jpg">
+            <div class="master__wrapper">
+              <p class="master__name">Ксения</p>
+              <p class="master__name master__name--light">цветная татуировка</p><a class="li" href="https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B8%D1%81%D0%B0" target="_blank">
+                <button class="butt">ПОДРОБНЕЕ</button></a>
+            </div>
+          </div>
+          <div class="master"><img class="master__photo" src="images/index/maria.jpg">
+            <div class="master__wrapper">
+              <p class="master__name">Мария</p>
+              <p class="master__name master__name--light">администратор</p><a class="li" href="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D1%82%D0%BE%D0%BD">
+                <button class="butt">ПОДРОБНЕЕ</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h2>ПОСЛЕДНИЕ РАБОТЫ</h2>
+      <section class="last-worck">
+        <div class="prev n"><a href="#"><img class="slider__but" src="images/index/nextb.svg"></a></div>
+        <div class="slider"><img class="img curry" src="images/index/last/a.jpg"><img class="img" src="images/index/last/b.jpg"><img class="img" src="images/index/last/c.jpg"><img class="img" src="images/index/last/d.jpg"><img class="img" src="images/index/last/e.jpg"><img class="img" src="images/index/last/f.jpg"><img class="img" src="images/index/last/g.jpg"><img class="img" src="images/index/last/h.jpg"></div>
+        <div class="next n"><a href="#"><img class="slider__but" src="images/index/nextn.svg"></a></div>
+      </section>
+      <h2>КОНТАКТЫ</h2>
+      <section class="contact contact-wrap">
+        <div class="contact__left-block">
+          <div class="wrap mar">
+            <div class="contact-content"><img class="contact-content__svg" src="images/layout/footer-phone.svg">
+              <p class="contact-content__title">+7 (950) 904-34-25</p>
+            </div>
+            <div class="contact-content"><img class="contact-content__svg" src="images/layout/footer-map.svg">
+              <p class="contact-content__title">Тула, ул.Демидовская <br> (Заречье), дом 74</p>
+            </div>
+          </div>
+          <div class="working-hours mar">
+            <p class="bold">Время работы :</p>
+            <div class="ini">
+              <p class="bold bold--col">Пн-Пт:</p>
+              <p class="contact-content__title">10:00 - 20:00</p>
+            </div>
+            <div class="ini">
+              <p class="bold bold--col">Сб-Вс:</p>
+              <p class="contact-content__title">Выходной</p>
+            </div>
+          </div>
+          <div class="mar">
+            <p class="bold">Мы в социальных сетях :</p>
+            <div class="social-media"><a href="https://www.instagram.com/zabey_tattoostudio/" target="_blank"><img class="social-media__img" src="images/layout/instagram.svg"></a><a href="https://vk.com/zabey_tattoostudio" target="_blank"><img class="social-media__img" src="images/layout/vk.svg"></a></div>
+          </div>
+        </div>
+        <div class="contact__right-block">
+          <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.883084943039!2d37.61873731587154!3d54.217557980170874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413440964d1361c3%3A0x222dfb06b4a302e4!2z0JTQtdC80LjQtNC-0LLRgdC60LDRjyDRg9C7LiwgNzQsINCi0YPQu9CwLCDQotGD0LvRjNGB0LrQsNGPINC-0LHQuy4sIDMwMDA1Nw!5e0!3m2!1sru!2sru!4v1616870716708!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
         </div>
       </section>
     </section>
-    <!--div.cub-->
     <div class="footer-decoration">
       <footer class="footer inner">
-        <div class="footer-menu"><a class="footer-menu__link" href="#">ГЛАВНАЯ</a><a class="footer-menu__link" href="#">УСЛУГИ</a><a class="footer-menu__link" href="#">ЗАПИСЬ</a><a class="footer-menu__link" href="#">КОНТАКТЫ</a><a class="footer-menu__link" href="#">FAQ</a></div>
-        <div class="footer-contact">
-          <div class="footer-contact__phone"><img class="footer-img" src="images/layout/footer-phone.svg">
-            <p>+7 (950) 904-34-25</p>
-          </div>
-          <div class="footer-contact__map"><img class="footer-img" src="images/layout/footer-map.svg">
-            <p>Тула, ул.Демидовская <br> (Заречье), дом 74</p>
-          </div>
-        </div>
-        <div class="footer-social-media"><a href="https://www.instagram.com/zabey_tattoostudio/" target="_blank"><img class="footer-img" src="images/layout/instagram.svg"></a><a href="https://vk.com/zabey_tattoostudio" target="_blank"><img class="footer-img" src="images/layout/vk.svg"></a></div>
+        <!--div.footer-menu
+        a(href='#').footer-menu__link ГЛАВНАЯ
+        a(href='#').footer-menu__link ЗАПИСЬ
+        a(href='#').footer-menu__link КОНТАКТЫ
+        a(href='#').footer-menu__link FAQ
+        -->
+        <!--div.footer-contact
+        div.footer-contact__phone
+            img.footer-img(src=require("../images/layout/footer-phone.svg"))
+            p +7 (950) 904-34-25
+        div.footer-contact__map
+            img.footer-img(src=require("../images/layout/footer-map.svg"))
+            p Тула, ул.Демидовская <br> (Заречье), дом 74
+        -->
+        <!--div.footer-social-media
+        a(href='https://www.instagram.com/zabey_tattoostudio/' target="_blank")
+            img.footer-img(src=require("../images/layout/instagram.svg"))
+        a(href='https://vk.com/zabey_tattoostudio' target="_blank")
+            img.footer-img(src=require("../images/layout/vk.svg"))
+        -->
       </footer>
     </div>
-  <script type="text/javascript" src="scripts/app.js" integrity="sha384-cVlZx+Tt/frU9uAgrod6zSyJ5love+SsNgwEqW3WrJaVeRS0+tMl7srNj/OdV/gF" crossorigin="anonymous"></script></body>
+  <script type="text/javascript" src="scripts/app.js" integrity="sha384-5WbTBPzXouYmCpI9gGotsE95KuA18FHZ48n52YB59KWw8Q9J82i3+OtnJFRMBCqN" crossorigin="anonymous"></script></body>
 </html>
