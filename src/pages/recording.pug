@@ -1,0 +1,24 @@
+extends include/layout
+append sharedVars
+    - const pageUrl = '/';
+    - const pageTitle = 'Запись';
+    - const bodyAdditionClass = '';
+    - const pageAdditionClass = 'main-page';
+block content
+    section.inner
+        section.record
+            form
+                input.in(type="text", placeholder="имя")
+                input.in(type="text", placeholder="эл.почта")
+                input.in(type="text", placeholder="номер телефона")
+                input.in(type="text", placeholder="место")
+                input.in(type="text", placeholder="размер")
+                input.in(type="text", placeholder="стиль")
+                input.in(type="file")
+                input.in(type="text", placeholder="дата")
+                input.in(type="text", placeholder="время")
+                input.in(type="submit", value="записаться")
+
+
+
+

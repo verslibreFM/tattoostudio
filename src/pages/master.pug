@@ -1,0 +1,66 @@
+extends include/layout
+append sharedVars
+    - const pageUrl = '/';
+    - const pageTitle = 'Мастер';
+    - const bodyAdditionClass = '';
+    - const pageAdditionClass = 'master';
+block content
+    section.inner
+        h2.title-style-other-pages Мастер
+    section.master-section
+        div.inner
+            div.wrap-master-section
+                div.wrap-master-section__container
+                    div.master-box
+                        div.master-box__text-description
+                            div
+                                p.master-box__name Ксения
+                                p.master-box__sector Мастер чб-реализма
+                                p.master-box__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto, autem commodi cum delectus dolorem ipsum numquam odio perspiciatis velit? Ad maiores minima reprehenderit! Consequuntur eaque labore minus nam quibusdam quis repellendus reprehenderit temporibus voluptatem.
+                            div
+                                a(href="#")
+                                    img.master-box__inst(src=require("../images/masters/instagram.svg"))
+                        img.master__photo.master__photo--size(src=require("../images/index/ks-vol.jpg"))
+    section.inner
+        h2 последние работы
+        section.last-worck
+            div.prev.n
+                a(href='#')
+                    img.slider__but(src=require("../images/index/nextb.svg"))
+            div.slider
+                img.img.curry(src=require("../images/masters/devushka_gitara_anime_141048_1024x768.jpg"))
+                img.img(src=require("../images/index/last/b.jpg"))
+                img.img(src=require("../images/index/last/c.jpg"))
+                img.img(src=require("../images/index/last/d.jpg"))
+                img.img(src=require("../images/index/last/e.jpg"))
+                img.img(src=require("../images/index/last/f.jpg"))
+                img.img(src=require("../images/index/last/g.jpg"))
+                img.img(src=require("../images/index/last/h.jpg"))
+            div.next.n
+                a(href='#')
+                    img.slider__but(src=require("../images/index/nextn.svg"))
+        h2 отзывы
+        section.reviews
+            div.ower
+                div.rew
+                    p.comment Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aliquid atque consequuntur dolor dolorem, doloribus earum enim error excepturi in iusto magnam modi molestiae mollitia necessitatibus nisi quae quo, sed, soluta totam voluptas voluptate. Architecto eligendi expedita impedit ipsa vel. Dignissimos dolore saepe soluta! Alias non possimus quam totam!
+                    div.author-comment
+                        span.author-comment__name Дима
+                        span.author-comment__mail verslibre.md@gmail.com
+                        span.author-comment__data 17:40 05.04.2021
+                div.rew
+                    p.comment Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aliquid atque consequuntur dolor dolorem, doloribus earum enim error excepturi in iusto magnam modi molestiae mollitia necessitatibus nisi quae quo, sed, soluta totam voluptas voluptate. Architecto eligendi expedita impedit ipsa vel. Dignissimos dolore saepe soluta! Alias non possimus quam totam!
+                    div.author-comment
+                        span.author-comment__name Дима
+                        span.author-comment__mail verslibre.md@gmail.com
+                        span.author-comment__data 17:40 05.04.2021
+
+                div.rew
+                    p.comment Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aliquid atque consequuntur dolor dolorem, doloribus earum enim error excepturi in iusto magnam modi molestiae mollitia necessitatibus nisi quae quo, sed, soluta totam voluptas voluptate. Architecto eligendi expedita impedit ipsa vel. Dignissimos dolore saepe soluta! Alias non possimus quam totam!
+                    div.author-comment
+                        span.author-comment__name Дима
+                        span.author-comment__mail verslibre.md@gmail.com
+                        span.author-comment__data 17:40 05.04.2021
+
+
+
