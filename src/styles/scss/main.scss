@@ -4,6 +4,9 @@
   font-family: 'FinistC';
   src: url("/src/fonts/FinistC.otf") format("opentype");
 }
+a{
+  text-decoration: none;
+}
 
 //сетка
 .inner {
@@ -43,12 +46,21 @@
   height: 50px;
 }
 .footer{
+  height:inherit;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.vers{
+  color: white;
+  font-size: 15px;
+}
+.vers:hover{
+  color: #313131;
 }
 
-.footer-social-media{
+/*.footer-social-media{
   margin-top: 30px;
   width: 80px;
   display: flex;
@@ -57,7 +69,7 @@
 .footer-img{
   width: 30px;
   height: 30px;
-}
+}*/
 
 /*
 

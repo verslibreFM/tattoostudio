@@ -50,7 +50,7 @@
 
 .master__photo--size{
   border-radius: 0;
-  width: auto;
+  width: 255px;
   height: 350px;
   margin-top: 25px;
 }
@@ -59,15 +59,19 @@
 
 .ower{
   width: auto;
-  height: 400px;
+  height: 500px;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, #CC95C0 0%, #DBD4B4 50%, #7AA1D2 100%);
+  //background: linear-gradient(90deg, #C9D6FF 0%, #E2E2E2 100%);
 }
-
 .rew{
-  background-color: rgba(206, 206, 206, 0.2);
-  border: 1px rgba(120, 120, 120, 0.18) solid;
+  background-color: rgb(255, 255, 255);
   margin: 10px 0;
   border-radius: 10px;
+  width: 600px;
 }
 .comment{
   padding: 5px;
@@ -79,4 +83,8 @@
   padding: 5px;
   color: #313131;
   font-family: 'Lora', serif;
+}
+
+.coments-form{
+  margin: 50px 0 50px 0;
 }
