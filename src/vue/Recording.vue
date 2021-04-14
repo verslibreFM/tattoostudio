@@ -1,6 +1,6 @@
 <template lang="pug">
-    form
-        inpun(type="text")
+div.test
+  p asdasd
 
 </template>
 

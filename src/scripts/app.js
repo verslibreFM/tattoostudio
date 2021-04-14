@@ -1,9 +1,12 @@
-/*import Vue from 'vue';
-import Recording from "../vue/Recording";
+import Vue from 'vue';
+import Recording from "../vue/Recording.vue";
 
-new Vue({
-   render: h => h(Recording),
-}).$mount('#add')*/
+if (document.getElementById('vue-rec')) {
+   new Vue({
+      render: h => h(Recording),
+   }).$mount('#vue-rec')
+}
+
 
 
 //main block services
