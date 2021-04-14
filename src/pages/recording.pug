@@ -5,19 +5,43 @@ append sharedVars
     - const bodyAdditionClass = '';
     - const pageAdditionClass = 'main-page';
 block content
-    section.inner
+    section#add
+
+    //section.inner
         section.record
-            form
+            form.form-legend
+                fieldset
+                    legend Шаг 1
+                    label(for="name") Ваше имя
+                    input.in(type="text", id="name")
+                    input.in(type="text", placeholder="фамилия")
+                    input.in(type="text", placeholder="эл.почта")
+                    input.in(type="text", placeholder="номер телефона")
+                fieldset
+                    legend Шаг 2
+                    input.in(type="text", placeholder="номер телефона")
+                    input.in(type="text", placeholder="место нанесения татуировки")
+                    input.in(type="text", placeholder="размер татуировки")
+                    input.in(type="text", placeholder="стиль татуировки")
+                    input.in(type="file")
+                fieldset
+                    legend Шаг 3
+                    input.in(type="text", placeholder="дата")
+                    input.in(type="text", placeholder="время")
+                input.in(type="button", value="записаться")
+            //form
                 input.in(type="text", placeholder="имя")
+                input.in(type="text", placeholder="фамилия")
                 input.in(type="text", placeholder="эл.почта")
                 input.in(type="text", placeholder="номер телефона")
-                input.in(type="text", placeholder="место")
-                input.in(type="text", placeholder="размер")
-                input.in(type="text", placeholder="стиль")
+                input.in(type="text", placeholder="место нанесения татуировки")
+                input.in(type="text", placeholder="размер татуировки")
+                input.in(type="text", placeholder="стиль татуировки")
                 input.in(type="file")
                 input.in(type="text", placeholder="дата")
                 input.in(type="text", placeholder="время")
                 input.in(type="submit", value="записаться")
+
 
 
 

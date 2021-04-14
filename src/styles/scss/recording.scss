@@ -4,7 +4,13 @@
   justify-content: center;
   align-items: center;
 }
+.form-legend fieldset{
+  display: flex;
+  flex-direction: column;
+}
 
 .in{
   width: 300px;
+  height: 30px;
+  margin: 10px;
 }
