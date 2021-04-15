@@ -1,16 +1,5 @@
-.record form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.form-legend fieldset{
-  display: flex;
-  flex-direction: column;
-}
-
-.in{
-  width: 300px;
-  height: 30px;
-  margin: 10px;
+.content-page{
+  width: auto;
+  height: 500px;
+  margin-top: 30px;
 }

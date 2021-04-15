@@ -8,6 +8,8 @@ a{
   text-decoration: none;
 }
 
+
+
 //сетка
 .inner {
   max-width: 1168px;
@@ -36,6 +38,8 @@ a{
   font-weight: normal;
   font-family: FinistC;
   &:hover{
+    text-decoration: none;
+    color: rgba(78, 108, 180);
     border-bottom: 2px solid rgba(78, 108, 180, 0.49);
   }
 }

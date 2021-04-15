@@ -175,6 +175,7 @@ module.exports = (env = {}, argv) => {
           $: 'jquery/dist/jquery.min.js',
           jQuery: 'jquery/dist/jquery.min.js',
           'window.jQuery': 'jquery/dist/jquery.min.js',
+          Popper: ['popper.js', 'default'],
         }),
         new VueLoaderPlugin(),
         ...pages.map(page => new plugins.html({

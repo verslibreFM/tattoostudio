@@ -1,13 +1,17 @@
 import Vue from 'vue';
 import Recording from "../vue/Recording.vue";
+import Vuelidate from "vuelidate";
+//require('bootstrap')
+//import 'bootstrap/dist/css/bootstrap.min.css';
+//import Vuelidate from "vuelidate/src";
+Vue.use(Vuelidate)
+
 
 if (document.getElementById('vue-rec')) {
    new Vue({
       render: h => h(Recording),
    }).$mount('#vue-rec')
 }
-
-
 
 //main block services
 let block = document.querySelectorAll('.block-decor');
