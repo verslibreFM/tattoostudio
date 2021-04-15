@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import Recording from "../vue/Recording.vue";
+import Sketch from "../vue/Sketch.vue";
 import Vuelidate from "vuelidate";
+
 //require('bootstrap')
 //import 'bootstrap/dist/css/bootstrap.min.css';
 //import Vuelidate from "vuelidate/src";
@@ -11,6 +13,11 @@ if (document.getElementById('vue-rec')) {
    new Vue({
       render: h => h(Recording),
    }).$mount('#vue-rec')
+}
+if (document.getElementById('vue-sketch')) {
+   new Vue({
+      render: h => h(Sketch),
+   }).$mount('#vue-sketch')
 }
 
 //main block services
