@@ -55,7 +55,7 @@
                             <input @blur="$v.formReg.size.$touch()"
                                    :class="{'is-invalid' : $v.formReg.size.$error}"
                                    v-model="formReg.size"
-                                   type="text" class="form-control" id="size" placeholder="5x5">
+                                   type="text" class="form-control" id="size" placeholder="высота, ширина">
                             <div class="invalid-feedback" v-if="!$v.formReg.size.required"> Поле обязательно для заполнения </div>
                         </div>
                         <div class="form-group">

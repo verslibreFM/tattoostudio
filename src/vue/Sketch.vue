@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-5 mx-auto">
-                <form @submit.prevent="registerSketch" novalidate method="post">
+                <form @submit.prevent="registerSketch" v-bind:style="activeForm" novalidate method="post">
                     <div class="step" v-show="step === 1">
                         <div class="form-group">
                             <label for="name">Имя</label>
@@ -47,14 +47,13 @@
                                 @click="nextStepToSketch"
                                 :disabled="disabledBtn">Следующий шаг</button>
                     </div>
-
                     <div class="step" v-show="step === 2">
                         <div class="form-group">
                             <label for="size">Размер</label>
                             <input @blur="$v.formSk.size.$touch()"
                                    :class="{'is-invalid' : $v.formSk.size.$error}"
                                    v-model="formSk.size"
-                                   type="text" class="form-control" id="size" placeholder="5x5">
+                                   type="text" class="form-control" id="size" placeholder="высота, ширина">
                             <div class="invalid-feedback" v-if="!$v.formSk.size.required"> Поле обязательно для заполнения </div>
                         </div>
                         <div class="form-group">
@@ -77,6 +76,14 @@
                                 class="btn btn-primary mt-3" type="submit">Записаться</button>
                     </div>
                 </form>
+                <div id="box " v-bind:style="box">
+                    <div class="box__endRec">
+                        <h2>Запись прошла успешно!</h2>
+                        <a href="recording.html">
+                            <button class="box__but">ОК</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -102,6 +109,12 @@
                     place: '',
                     size: '',
                     file:'',
+                },
+                box: {
+                    display: "none",
+                },
+                activeForm : {
+                    display: "block"
                 }
             }
         },
@@ -186,5 +199,32 @@
 </script>
 
 <style scoped>
+
+    .as{
+        padding: 0;
+        height: 100%;
+    }
+    .box__endRec{
+        width: auto;
+        height: 160px;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 100px 80px rgba(0, 0, 0, 0.07), 0 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+
+    }
+    .box__endRec h2{
+        margin: 30px 0;
+    }
+    .box__but{
+        width: 100px;
+        height: 30px;
+        border: none;
+        background-color: rgba(0, 123, 255, 0.65);
+        color: white;
+        border-radius: 10px;
+    }
 
 </style>
