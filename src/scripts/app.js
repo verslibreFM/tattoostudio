@@ -20,6 +20,7 @@ if (document.getElementById('vue-sketch')) {
    }).$mount('#vue-sketch')
 }
 
+
 //main block services
 let block = document.querySelectorAll('.block-decor');
 block.forEach(function (i){
@@ -84,8 +85,6 @@ $(document).ready(function () {
 $(".questions-item__button").on("click", function(){
    $(this).next().slideToggle("200");
 });
-
-
 
 
 
