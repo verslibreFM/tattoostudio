@@ -1,62 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
-
-@font-face {
-  font-family: 'FinistC';
-  src: url("/src/fonts/FinistC.otf") format("opentype");
-}
-
-a:hover{
-  text-decoration: none;
-}
-
-h2{
-  text-align: center;
-  font-family: FinistC;
-  letter-spacing: 5px;
-  font-size: 35px;
-  color: $colorMenu;
-  margin: 80px 0;
-}
-p{
-  font-family: 'Lora', serif;
-}
 
 .cub{
-  width: auto;
+  width: 100%;
   height: 500px;
   background-color: #6D7077;
 }
 
 //УСЛУГИ
-
 .services{
-    width: inherit;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    //background-color: #A7BFE8;
-}
-
-.l-s{
-  text-decoration: none;
-}
-.services__block{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //background-color: #A7BFE8;
-  width: 300px;
   height: 250px;
 }
-
 .services__title{
   text-align: center;
   font-weight: 500;
   color: $colorMenu;
+  font-size: 16px;
+  @include mediaWidth($widthTablet) {
+    display: none;
+    margin-bottom: 2px;
+  }
 }
-
+.services__title--mobile{
+  display: none;
+  @include mediaWidth($widthTablet) {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
 .block-decor{
     width: 200px;
     height: 200px;
@@ -66,13 +39,26 @@ p{
     justify-content: center;
     align-items: center;
     position: relative;
-
+  @include mediaWidth($widthTablet) {
+    width: 200px;
+    height: 200px;
+  }
+  @include mediaWidth($widthPhone) {
+    width: 150px;
+    height: 150px;
+  }
     img{
       z-index: 2;
+      @include mediaWidth($widthTablet) {
+        width: 85px;
+        height: 85px;
+      }@include mediaWidth($widthPhone) {
+        width: 55px;
+        height: 55px;
+      }
     }
 }
-
-.fon{
+.bg-hover{
   width: 70px;
   height: 70px;
   background-color: #A7BFE8;
@@ -82,14 +68,12 @@ p{
   display: none;
 }
 
-
 //МАСТЕРА
 
 .masters{
-  width: auto;
+  width: 100%;
   height: auto;
 }
-
 .master-card{
   display: flex;
   flex-direction: row;
@@ -103,7 +87,7 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding: 10px;
 
   &:hover{
     box-shadow: 0px -7px 80px rgba(42, 79, 160, 0.12), 0px -3.23631px 36.9864px rgba(42, 79, 160, 0.0880224), 0px -1.85174px 21.1628px rgba(42, 79, 160, 0.069806), 0px -1.124px 12.8457px rgba(42, 79, 160, 0.0544984), 0px -0.677257px 7.74008px rgba(42, 79, 160, 0.0406396), 0px -0.37714px 4.31018px rgba(42, 79, 160, 0.0275912), 0px -0.162205px 1.85378px rgba(42, 79, 160, 0.0148405);
@@ -122,14 +106,18 @@ p{
 }
 
 .master__name {
-  color: rgba(19, 19, 21, 0.85);
-  font-weight: 500;
+  color: rgba(64, 64, 64, 0.86);
+  font-weight: 700;
+  margin-top: 10px;
+  margin-block-end: 0;
 }
 
-.master__name.master__name--light{
+.master__name--light{
   font-weight: 500;
   font-style: italic;
   color: #6D7077;
+  margin-block-start: 0;
+  margin: 6px 0 12px 0;
 }
 
 .li{
@@ -138,7 +126,7 @@ p{
 .butt{
   width: 170px;
   height: 40px;
-  background-color: #244082;
+  background-color: #6D99E9;
   color: #ffffff;
   border: none;
   border-radius: 15px;
@@ -211,9 +199,15 @@ p{
 .contact__left-block{
   width: 350px;
   height: auto;
-  background: linear-gradient(90deg, rgba(190, 147, 197, 0.9) 0%, rgba(123, 198, 204, 0.9) 100%);
+  background: linear-gradient(90deg, #8E9EAB 0%, #EEF2F3 100%);
   position: absolute;
-  z-index: 2
+  z-index: 2;
+  padding: 10px;
+  @include mediaWidth($widthXs) {
+    position: relative;
+    width: 100%;
+  }
+
 }
 .wrap{
   display: flex;
@@ -239,7 +233,7 @@ p{
   color: #3f5791;
 }
 .bold--col{
-  color: rgba(0, 0, 0, 0.4);
+  color: white;
 }
 .working-hours__title{
   color: white;
@@ -260,10 +254,14 @@ p{
 .contact__right-block{
   position: relative;
   z-index: 1;
+  @include mediaWidth($widthXs) {
+    display: none;
+  }
 }
 .map iframe{
-  width: 1168px;;
+  width: 1168px;
   height: 600px;
+
 }
 
 

@@ -3,7 +3,7 @@ import Recording from "../vue/Recording.vue";
 import Sketch from "../vue/Sketch.vue";
 import Vuelidate from "vuelidate";
 
-//require('bootstrap')
+require('bootstrap')
 //import 'bootstrap/dist/css/bootstrap.min.css';
 //import Vuelidate from "vuelidate/src";
 Vue.use(Vuelidate)
@@ -25,11 +25,11 @@ if (document.getElementById('vue-sketch')) {
 let block = document.querySelectorAll('.block-decor');
 block.forEach(function (i){
    i.addEventListener('mouseover', function (e) {
-      let current = i.closest('div').querySelector('.fon');
+      let current = i.closest('div').querySelector('.bg-hover');
       current.style.display = "block"
    });
    i.addEventListener('mouseout', function (e) {
-      let current = i.closest('div').querySelector('.fon');
+      let current = i.closest('div').querySelector('.bg-hover');
       current.style.display = "none"
    });
 });
@@ -55,14 +55,14 @@ $(document).ready(function () {
       let currentImageIndex =  $('.img.curry').index();
       let nextImageIndex = currentImageIndex + 1;
       let nextImage = $('.img').eq(nextImageIndex);
-      currentImage.fadeOut(1000);
+      currentImage.fadeOut(400);
       currentImage.removeClass('curry');
 
       if (nextImageIndex == ($('.img:last').index()+1)){
-         $('.img').eq(0).fadeIn(1000);
+         $('.img').eq(0).fadeIn(100);
          $('.img').eq(0).addClass('curry');
       }else{
-         nextImage.fadeIn(1000);
+         nextImage.fadeIn(400);
          nextImage.addClass('curry');
       }
    });
@@ -74,9 +74,9 @@ $(document).ready(function () {
       let prevImageIndex = currentImageIndex - 1;
       let prevImage = $('.img').eq(prevImageIndex);
 
-      currentImage.fadeOut(1000);
+      currentImage.fadeOut(400);
       currentImage.removeClass('curry');
-      prevImage.fadeIn(1000);
+      prevImage.fadeIn(400);
       prevImage.addClass('curry');
    });
 });
@@ -85,6 +85,11 @@ $(document).ready(function () {
 $(".questions-item__button").on("click", function(){
    $(this).next().slideToggle("200");
 });
+
+
+
+
+
 
 
 

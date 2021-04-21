@@ -6,29 +6,36 @@ append sharedVars
     - const pageAdditionClass = 'main-page';
 block content
     div.cub
-    //div
-        <iframe src="https://vk.com/video_ext.php?oid=-26147985&id=456239034&hash=7038095459f49b02&hd=3" width="1280" height="720" frameborder="0" allowfullscreen autoplay></iframe>
+        //img(src=require("../images/recording/sktwo.jpg"))
     section.inner
         h2 УСЛУГИ
-        section.services
-            div.consultation.services__block
-                p.services__title БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
-                a(href='faq.html').l-s
-                    div.block-decor
-                        div.fon
-                        img(src=require("../images/index/consultation.svg"))
-            div.sketch.services__block
-                p.services__title ИНДИВИДУАЛЬНЫЙ ЭСКИЗ
-                a(href='sketch.html').l-s
-                    div.block-decor
-                        div.fon
-                        img(src=require("../images/index/sketch.svg"))
-            div.tattoo.services__block
-                p.services__title ХУДОЖЕСТВЕННАЯ ТАТУИРОВКА
-                a(href='recording.html').l-s
-                    div.block-decor
-                        div.fon
-                        img(src=require("../images/index/tattoo.svg"))
+        div.container
+            div.row
+                div.col
+                    div.services
+                        p.services__title БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+                        p.services__title.services__title--mobile КОНСУЛЬТАЦИЯ
+                        a(href='faq.html')
+                            div.block-decor
+                                div.bg-hover
+                                img(src=require("../images/index/consultation.svg"))
+                div.col
+                    div.services
+                        p.services__title ИНДИВИДУАЛЬНЫЙ ЭСКИЗ
+                        p.services__title.services__title--mobile ЭСКИЗ
+                        a(href='sketch.html')
+                            div.block-decor
+                                div.bg-hover
+                                img(src=require("../images/index/sketch.svg"))
+                div.col
+                    div.services
+                        p.services__title ХУДОЖЕСТВЕННАЯ ТАТУИРОВКА
+                        p.services__title.services__title--mobile ТАТУИРОВКА
+                        a(href='recording.html')
+                            div.block-decor
+                                div.bg-hover
+                                img(src=require("../images/index/tattoo.svg"))
+
         h2 МАСТЕРА
         section.masters
             div.master-card
@@ -56,7 +63,7 @@ block content
                             button.butt ПОДРОБНЕЕ
         h2 ПОСЛЕДНИЕ РАБОТЫ
         section.last-worck
-            div.prev.n
+            div.prev
                 a(href='#')
                     img.slider__but(src=require("../images/index/nextb.svg"))
             div.slider
@@ -68,7 +75,7 @@ block content
                 img.img(src=require("../images/index/last/f.jpg"))
                 img.img(src=require("../images/index/last/g.jpg"))
                 img.img(src=require("../images/index/last/h.jpg"))
-            div.next.n
+            div.next
                 a(href='#')
                     img.slider__but(src=require("../images/index/nextn.svg"))
         h2 КОНТАКТЫ
