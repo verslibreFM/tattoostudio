@@ -62,49 +62,90 @@ block content
                         a.li(href='master.html')
                             button.butt ПОДРОБНЕЕ
         h2 ПОСЛЕДНИЕ РАБОТЫ
-        section.last-worck
-            div.prev
-                a(href='#')
-                    img.slider__but(src=require("../images/index/nextb.svg"))
-            div.slider
-                img.img.curry(src=require("../images/index/last/a.jpg"))
-                img.img(src=require("../images/index/last/b.jpg"))
-                img.img(src=require("../images/index/last/c.jpg"))
-                img.img(src=require("../images/index/last/d.jpg"))
-                img.img(src=require("../images/index/last/e.jpg"))
-                img.img(src=require("../images/index/last/f.jpg"))
-                img.img(src=require("../images/index/last/g.jpg"))
-                img.img(src=require("../images/index/last/h.jpg"))
-            div.next
-                a(href='#')
-                    img.slider__but(src=require("../images/index/nextn.svg"))
+        div.container
+            div.row
+                div.col-10.mx-auto
+                    div#slider.carousel.carousel-dark.slide(data-ride="carousel")
+                        ol.carousel-indicators
+                            li.active(data-target="#slider" data-slide-to="0")
+                            li(data-target="#slider" data-slide-to="1")
+                            li(data-target="#slider" data-slide-to="2")
+                            li(data-target="#slider" data-slide-to="3")
+                            li(data-target="#slider" data-slide-to="4")
+                            li(data-target="#slider" data-slide-to="5")
+                            li(data-target="#slider" data-slide-to="6")
+                            li(data-target="#slider" data-slide-to="7")
+                            li(data-target="#slider" data-slide-to="8")
+                        div.carousel-inner
+                            div.carousel-item.active
+                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/a.jpg"))
+                                div.carousel-caption.d-none.d-md-block
+                                    h5 Ксения Осипова
+                            div.carousel-item
+                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/b.jpg"))
+                                div.carousel-caption.d-none.d-md-block
+                                    h5 Мария Ковалева
+                            div.carousel-item
+                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/c.jpg"))
+                                div.carousel-caption.d-none.d-md-block
+                                    h5 Ксения Волкова
+                            div.carousel-item
+                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/d.jpg"))
+                                div.carousel-caption.d-none.d-md-block
+                                    h5 Ксения Осипова
+                            div.carousel-item
+                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/e.jpg"))
+                                div.carousel-caption.d-none.d-md-block
+                                    h5 Мария Ковалева
+                            div.carousel-item
+                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/f.jpg"))
+                                div.carousel-caption.d-none.d-md-block
+                                    h5 Ксения Волкова
+                            div.carousel-item
+                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/g.jpg"))
+                                div.carousel-caption.d-none.d-md-block
+                                    h5 Ксения Осипова
+                            div.carousel-item
+                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/h.jpg"))
+                                div.carousel-caption.d-none.d-md-block
+                                    h5 Мария Ковалева
+                            div.carousel-item
+                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/b.jpg"))
+                                div.carousel-caption.d-none.d-md-block
+                                    h5 Ксения Волкова
+                        a.carousel-control-prev(href='#slider' role="button" data-slide="prev")
+                            span.carousel-control-prev-icon(aria-hidden="true")
+                            span.sr-only Previous
+                        a.carousel-control-next(href='#slider' role="button" data-slide="next")
+                            span.carousel-control-next-icon(aria-hidden="true")
+                            span.sr-only Next
         h2 КОНТАКТЫ
-        section.contact.contact-wrap
-            div.contact__left-block
-                div.wrap.mar
+        section.contact-wrap
+            div.contact__information-field
+                div.wrap-content-box.wrap-content-box--margin-mobile
                     div.contact-content
                         img.contact-content__svg(src=require("../images/layout/footer-phone.svg"))
                         p.contact-content__title +7 (950) 904-34-25
                     div.contact-content
                         img.contact-content__svg(src=require("../images/layout/footer-map.svg"))
                         p.contact-content__title Тула, ул.Демидовская #[br] (Заречье), дом 74
-                div.working-hours.mar
-                    p.bold Время работы :
-                    div.ini
-                        p.bold.bold--col Пн-Пт:
+                div.working-hours.working-hours--margin-mobile
+                    p.working-hours__title Время работы :
+                    div.working-hours__box
+                        p.working-hours__title.working-hours__title--color Пн-Пт:
                         p.contact-content__title 10:00 - 20:00
-                    div.ini
-                        p.bold.bold--col Сб-Вс:
+                    div.working-hours__box
+                        p.working-hours__title.working-hours__title--color Сб-Вс:
                         p.contact-content__title Выходной
-                div.mar
-                    p.bold Мы в социальных сетях :
+                div.map-social-media.map-social-media--margin-mobile
+                    p.working-hours__title Мы в социальных сетях :
                     div.social-media
                         a(href='https://www.instagram.com/zabey_tattoostudio/' target="_blank")
                             img.social-media__img(src=require("../images/layout/instagram.svg"))
                         a(href='https://vk.com/zabey_tattoostudio' target="_blank")
                             img.social-media__img(src=require("../images/layout/vk.svg"))
-            div.contact__right-block
-                div.map
+            div.contact-wrap__map-field
+                div.contact-wrap__map
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.883084943039!2d37.61873731587154!3d54.217557980170874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413440964d1361c3%3A0x222dfb06b4a302e4!2z0JTQtdC80LjQtNC-0LLRgdC60LDRjyDRg9C7LiwgNzQsINCi0YPQu9CwLCDQotGD0LvRjNGB0LrQsNGPINC-0LHQuy4sIDMwMDA1Nw!5e0!3m2!1sru!2sru!4v1616870716708!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 
