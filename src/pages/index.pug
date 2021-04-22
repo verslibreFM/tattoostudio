@@ -1,11 +1,13 @@
 extends include/layout
 append sharedVars
     - const pageUrl = '/';
-    - const pageTitle = 'Главная';
+    - const pageTitle = 'Zaбей - тату-студия в Туле';
     - const bodyAdditionClass = '';
     - const pageAdditionClass = 'main-page';
 block content
-    div.cub
+
+    div.meeting-block
+        img.meeting-block__picture(src=require("../images/index/meeting-picture.jpg"))
     section.inner
         h2 УСЛУГИ
         div.container

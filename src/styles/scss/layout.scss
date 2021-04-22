@@ -6,6 +6,7 @@
 body{
   background-color: $colorWhite;
 }
+
 a{
   text-decoration: none;
   &:hover{
@@ -59,7 +60,10 @@ ul{
   margin: 0 30px;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: $colorMenu;
+  color: #ffffff;
+  @include mediaWidth($widthPhone) {
+    color: $colorMenu;
+  }
   &:hover{
     color: #3c76e3;
   }
@@ -78,3 +82,4 @@ ul{
   justify-content: center;
   align-items: center;
 }
+
