@@ -6,7 +6,6 @@ append sharedVars
     - const pageAdditionClass = 'main-page';
 block content
     div.cub
-        //img(src=require("../images/recording/sktwo.jpg"))
     section.inner
         h2 УСЛУГИ
         div.container
@@ -40,27 +39,26 @@ block content
         section.masters
             div.master-card
                 div.master
-                    img.master__photo(src=require("../images/index/ks-os.jpg"))
+                    img.master__photo(src=require("../images/index/osipova.jpg"))
                     div.master__wrapper
                         p.master__name Ксения
-                        p.master__name.master__name--light цветная татуировка
-                        a.li(href='masterKO.html')
-                            button.butt ПОДРОБНЕЕ
+                        p.master__specialty цветная татуировка
+                        a(href='osipova.html')
+                            button.master__button ПОДРОБНЕЕ
                 div.master
-                    img.master__photo(src=require("../images/index/maria.jpg"))
+                    img.master__photo(src=require("../images/index/kovaleva.jpg"))
                     div.master__wrapper
                         p.master__name Мария
-                        p.master__name.master__name--light графика
-                        a.li(href='masterMK.html')
-                            button.butt ПОДРОБНЕЕ
+                        p.master__specialty графика
+                        a(href='kovaleva.html')
+                            button.master__button ПОДРОБНЕЕ
                 div.master
-                    //a(href='https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9' target="_blank")
-                    img.master__photo(src=require("../images/index/ks-vol.jpg"))
+                    img.master__photo(src=require("../images/index/volkova.jpg"))
                     div.master__wrapper
                         p.master__name Ксения
-                        p.master__name.master__name--light черно-белый реализм
-                        a.li(href='master.html')
-                            button.butt ПОДРОБНЕЕ
+                        p.master__specialty черно-белый реализм
+                        a(href='volkova.html')
+                            button.master__button ПОДРОБНЕЕ
         h2 ПОСЛЕДНИЕ РАБОТЫ
         div.container
             div.row
@@ -78,39 +76,39 @@ block content
                             li(data-target="#slider" data-slide-to="8")
                         div.carousel-inner
                             div.carousel-item.active
-                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/a.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/a.jpg"))
                                 div.carousel-caption.d-none.d-md-block
                                     h5 Ксения Осипова
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/b.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/b.jpg"))
                                 div.carousel-caption.d-none.d-md-block
                                     h5 Мария Ковалева
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/c.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/c.jpg"))
                                 div.carousel-caption.d-none.d-md-block
                                     h5 Ксения Волкова
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/d.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/d.jpg"))
                                 div.carousel-caption.d-none.d-md-block
                                     h5 Ксения Осипова
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/e.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/e.jpg"))
                                 div.carousel-caption.d-none.d-md-block
                                     h5 Мария Ковалева
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/f.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/f.jpg"))
                                 div.carousel-caption.d-none.d-md-block
                                     h5 Ксения Волкова
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/g.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/g.jpg"))
                                 div.carousel-caption.d-none.d-md-block
                                     h5 Ксения Осипова
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/h.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/h.jpg"))
                                 div.carousel-caption.d-none.d-md-block
                                     h5 Мария Ковалева
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/index/last/b.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/b.jpg"))
                                 div.carousel-caption.d-none.d-md-block
                                     h5 Ксения Волкова
                         a.carousel-control-prev(href='#slider' role="button" data-slide="prev")
@@ -124,10 +122,10 @@ block content
             div.contact__information-field
                 div.wrap-content-box.wrap-content-box--margin-mobile
                     div.contact-content
-                        img.contact-content__svg(src=require("../images/layout/footer-phone.svg"))
+                        img.contact-content__svg(src=require("../images/index/phone.svg"))
                         p.contact-content__title +7 (950) 904-34-25
                     div.contact-content
-                        img.contact-content__svg(src=require("../images/layout/footer-map.svg"))
+                        img.contact-content__svg(src=require("../images/index/map.svg"))
                         p.contact-content__title Тула, ул.Демидовская #[br] (Заречье), дом 74
                 div.working-hours.working-hours--margin-mobile
                     p.working-hours__title Время работы :
@@ -141,9 +139,9 @@ block content
                     p.working-hours__title Мы в социальных сетях :
                     div.social-media
                         a(href='https://www.instagram.com/zabey_tattoostudio/' target="_blank")
-                            img.social-media__img(src=require("../images/layout/instagram.svg"))
+                            img.social-media__img(src=require("../images/index/instagram.svg"))
                         a(href='https://vk.com/zabey_tattoostudio' target="_blank")
-                            img.social-media__img(src=require("../images/layout/vk.svg"))
+                            img.social-media__img(src=require("../images/index/vk.svg"))
             div.contact-wrap__map-field
                 div.contact-wrap__map
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.883084943039!2d37.61873731587154!3d54.217557980170874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413440964d1361c3%3A0x222dfb06b4a302e4!2z0JTQtdC80LjQtNC-0LLRgdC60LDRjyDRg9C7LiwgNzQsINCi0YPQu9CwLCDQotGD0LvRjNGB0LrQsNGPINC-0LHQuy4sIDMwMDA1Nw!5e0!3m2!1sru!2sru!4v1616870716708!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

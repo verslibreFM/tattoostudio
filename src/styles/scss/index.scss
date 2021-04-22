@@ -5,7 +5,7 @@
   background-color: #6D7077;
 }
 
-//УСЛУГИ
+//services
 .services{
   display: flex;
   flex-direction: column;
@@ -68,18 +68,29 @@
   display: none;
 }
 
-//МАСТЕРА
-
+//masters
 .masters{
   width: 100%;
   height: auto;
+  @include mediaWidth($widthPhone) {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+  }
 }
 .master-card{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  @include mediaWidth($widthTablet) {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-
 .master{
   width: 350px;
   height: 400px;
@@ -88,42 +99,57 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
-
-  &:hover{
-    box-shadow: 0px -7px 80px rgba(42, 79, 160, 0.12), 0px -3.23631px 36.9864px rgba(42, 79, 160, 0.0880224), 0px -1.85174px 21.1628px rgba(42, 79, 160, 0.069806), 0px -1.124px 12.8457px rgba(42, 79, 160, 0.0544984), 0px -0.677257px 7.74008px rgba(42, 79, 160, 0.0406396), 0px -0.37714px 4.31018px rgba(42, 79, 160, 0.0275912), 0px -0.162205px 1.85378px rgba(42, 79, 160, 0.0148405);
+  @include mediaWidth($widthTablet) {
+    width: 350px;
+    height: 400px;
+    margin: 0 10px 0 10px;
   }
-
-  p{
-    text-align: center;
+  @include mediaWidth($widthPhone) {
+    width: 250px;
+    height: 270px;
+    margin: 0 10px 0 10px;
   }
 }
-
+.master:hover{
+  box-shadow: 0px -7px 80px rgba(42, 79, 160, 0.12), 0px -3.23631px 36.9864px rgba(42, 79, 160, 0.0880224), 0px -1.85174px 21.1628px rgba(42, 79, 160, 0.069806), 0px -1.124px 12.8457px rgba(42, 79, 160, 0.0544984), 0px -0.677257px 7.74008px rgba(42, 79, 160, 0.0406396), 0px -0.37714px 4.31018px rgba(42, 79, 160, 0.0275912), 0px -0.162205px 1.85378px rgba(42, 79, 160, 0.0148405);
+}
+.master p{
+  text-align: center;
+}
 .master__photo{
   width: 250px;
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
+  @include mediaWidth($widthTablet) {
+    width: 200px;
+    height: 200px;
+  }
+  @include mediaWidth($widthPhone) {
+    width: 150px;
+    height: 150px;
+  }
 }
-
 .master__name {
-  color: rgba(64, 64, 64, 0.86);
   font-weight: 700;
+  color: rgba(64, 64, 64, 0.86);
   margin-top: 10px;
   margin-block-end: 0;
+  @include mediaWidth($widthPhone) {
+    font-size: 15px;
+  }
 }
-
-.master__name--light{
+.master__specialty{
   font-weight: 500;
   font-style: italic;
   color: #6D7077;
+  margin: 10px 0 12px 0;
   margin-block-start: 0;
-  margin: 6px 0 12px 0;
+  @include mediaWidth($widthPhone) {
+    font-size: 14px;
+  }
 }
-
-.li{
-  text-decoration: none;
-}
-.butt{
+.master__button{
   width: 170px;
   height: 40px;
   background-color: #6D99E9;
@@ -133,10 +159,17 @@
   display: none;
   cursor: pointer;
   font-family: 'Lora', serif;
+  @include mediaWidth($widthPhone) {
+    display: block;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 3px;
+  }
 }
 
-
-//ПОСЛЕДНИЕ РАБОТЫ
+//last works
 .img-slider{
   width: 500px;
   height: 500px;
@@ -149,8 +182,7 @@
   filter: invert(1) grayscale(100);
 }
 
-
-//КОНТАКТЫ
+//contacts
 .contact-wrap{
   display: flex;
   justify-content: flex-start;

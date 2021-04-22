@@ -4,11 +4,28 @@
     <title>Мастер</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
-  <link href="styles/app.css" rel="stylesheet" integrity="sha384-JxOZZtU3b39tKe0IStFjYOkkrC07J/Hi76YvrklMKwJO1SJITakrWpsmbiZNcgil" crossorigin="anonymous"></head>
+  <link href="styles/app.css" rel="stylesheet" integrity="sha384-AQESBMHfroXFuAnHxTEa4Y+EpzRxTBmQIbo4ErWqT7xWIwZ6Izi/VAuZb1GdOdCR" crossorigin="anonymous"></head>
   <body id="zabey">
-    <header class="header inner"><a href="/"><img class="header__logo" src="images/layout/logo.svg"></a>
-      <nav class="menu"><a class="menu__link" href="/">ГЛАВНАЯ</a><a class="menu__link" href="recording.html">ЗАПИСЬ</a><a class="menu__link" href="sketch.html">ЭСКИЗ</a><a class="menu__link" href="contacts.html">КОНТАКТЫ</a><a class="menu__link" href="faq.html">FAQ</a></nav>
-    </header>
+    <section class="inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="/"><img class="logo" src="images/layout/logo.svg" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item mx-auto"><a class="nav-link menu-link" href="/">ГЛАВНАЯ</a></li>
+                  <li class="nav-item mx-auto"><a class="nav-link menu-link" href="recording.html">ЗАПИСЬ</a></li>
+                  <li class="nav-item mx-auto"><a class="nav-link menu-link" href="sketch.html">ЭСКИЗ</a></li>
+                  <li class="nav-item mx-auto"><a class="nav-link menu-link" href="contacts.html">КОНТАКТЫ</a></li>
+                  <li class="nav-item mx-auto"><a class="nav-link menu-link" href="faq.html">FAQ</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="inner">
       <h2 class="title-style-other-pages">Мастер</h2>
     </section>
@@ -24,7 +41,7 @@
                   <p class="master-box__desc">Уважаю Ваш выбор тату и всегда готова подсказать лучшие варианты реализации. Предпочитаю работы в стилях акварель и графика. Хочу, чтобы по улицам нашего города ходили как можно больше людей с качественными и уникальными изображениями на теле! Без проблем сделаю перекрытие старой тату или замаскирую шрам!</p>
                 </div>
                 <div><a href="https://www.instagram.com/_oktattoo_/" target="_blank"><img class="master-box__inst" src="images/masters/instagram.svg"></a></div>
-              </div><img class="master__photo master__photo--size" src="images/index/ks-os.jpg">
+              </div><img class="master__photo master__photo--size" src="images/index/osipova.jpg">
             </div>
           </div>
         </div>
@@ -32,11 +49,24 @@
     </section>
     <section class="inner">
       <h2>последние работы</h2>
-      <section class="last-worck">
-        <div class="prev n"><a href="#"><img class="slider__but" src="images/index/nextb.svg"></a></div>
-        <div class="slider"><img class="img curry" src="images/masters/960x960 (1).jpg"><img class="img" src="images/index/last/b.jpg"><img class="img" src="images/index/last/c.jpg"><img class="img" src="images/index/last/d.jpg"><img class="img" src="images/index/last/e.jpg"><img class="img" src="images/index/last/f.jpg"><img class="img" src="images/index/last/g.jpg"><img class="img" src="images/index/last/h.jpg"></div>
-        <div class="next n"><a href="#"><img class="slider__but" src="images/index/nextn.svg"></a></div>
-      </section>
+      <!--section.last-worck
+      div.prev.n
+          a(href='#')
+              img.slider__but(src=require("../images/index/nextb.svg"))
+      div.slider
+          img.img.curry(src=require("../images/masters/960x960 (1).jpg"))
+          img.img(src=require("../images/index/last/b.jpg"))
+          img.img(src=require("../images/index/last/b.jpg"))
+          img.img(src=require("../images/index/last/c.jpg"))
+          img.img(src=require("../images/index/last/d.jpg"))
+          img.img(src=require("../images/index/last/e.jpg"))
+          img.img(src=require("../images/index/last/f.jpg"))
+          img.img(src=require("../images/index/last/g.jpg"))
+          img.img(src=require("../images/index/last/h.jpg"))
+      div.next.n
+          a(href='#')
+              img.slider__but(src=require("../images/index/nextn.svg"))
+      -->
       <h2>отзывы</h2>
       <section class="reviews">
         <div class="ower">
@@ -65,30 +95,13 @@
         </div>
       </section>
     </section>
-    <div class="footer-decoration">
-      <footer class="footer inner">
-        <!--a(href="#", target="_blank").vers verslibre-->
-        <!--div.footer-menu
-        a(href='#').footer-menu__link ГЛАВНАЯ
-        a(href='#').footer-menu__link ЗАПИСЬ
-        a(href='#').footer-menu__link КОНТАКТЫ
-        a(href='#').footer-menu__link FAQ
-        -->
-        <!--div.footer-contact
-        div.footer-contact__phone
-            img.footer-img(src=require("../images/layout/footer-phone.svg"))
-            p +7 (950) 904-34-25
-        div.footer-contact__map
-            img.footer-img(src=require("../images/layout/footer-map.svg"))
-            p Тула, ул.Демидовская <br> (Заречье), дом 74
-        -->
-        <!--div.footer-social-media
-        a(href='https://www.instagram.com/zabey_tattoostudio/' target="_blank")
-            img.footer-img(src=require("../images/layout/instagram.svg"))
-        a(href='https://vk.com/zabey_tattoostudio' target="_blank")
-            img.footer-img(src=require("../images/layout/vk.svg"))
-        -->
-      </footer>
+    <div class="container"></div>
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-decoration">
+          <footer class="footer inner"></footer>
+        </div>
+      </div>
     </div>
-  <script type="text/javascript" src="scripts/app.js" integrity="sha384-Ff6wUf79fYL2RMPO81BYLgB7gNo1c3HMr87XI0zgDdQnQ1og1aoWCndEqymV2luF" crossorigin="anonymous"></script></body>
+  <script type="text/javascript" src="scripts/app.js" integrity="sha384-SzLTUxXe8wh3pviZlAMyMHDU3DPIgFZ3fs26E+v2oheanhkjSujPYY9kBA/WBTWt" crossorigin="anonymous"></script></body>
 </html>
