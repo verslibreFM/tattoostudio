@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-5 mx-auto">
-                <form @submit.prevent="registerSketch" v-bind:style="activeForm" novalidate method="post">
+                <form @submit.prevent="registerSketch" novalidate method="post">
                     <div class="step" v-show="step === 1">
                         <div class="form-group">
                             <label for="name">Имя</label>
@@ -43,7 +43,7 @@
                                 <div class="invalid-feedback" v-if="!$v.formSk.phone.numeric"> Поле не может содержать буквы и другие символы</div>
                             </div>
                         </div>
-                        <button class="btn btn-primary mt-3" type="button"
+                        <button class="btn btn-outline-primary mt-3" type="button"
                                 @click="nextStepToSketch"
                                 :disabled="disabledBtn">Следующий шаг</button>
                     </div>
@@ -68,26 +68,32 @@
                         </div>
                         <div class="form-group">
                             <label for="file">Пример</label>
-                            <input type="file" class="form-control as" id="file" ref="file"
+                            <input type="file" class="form-control example-file" id="file" ref="file"
                                    v-on:change="handleFileUpload()">
                         </div>
                         <button @click="backStep" type="button" class="btn btn-light mt-3">Назад</button>
-                        <button @click="endRec" v-on:click="submitFile()"
-                                class="btn btn-primary mt-3" type="submit">Записаться</button>
+                        <button v-on:click="submitFile()"
+                                data-toggle="modal" data-target="#modal-sketch"
+                                class="btn btn-outline-primary mt-3" type="submit">Отправить</button>
                     </div>
                 </form>
-                <div id="box " v-bind:style="box">
-                    <div class="box__endRec">
-                        <h2>Запись прошла успешно!</h2>
-                        <a href="recording.html">
-                            <button class="box__but">ОК</button>
-                        </a>
+                <div class="modal fade" id="modal-sketch" tabindex="-1" role="dialog" aria-labelledby="modal-sketch" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <h2> Успешно !</h2>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="sketch.html">
+                                    <button class="btn btn-outline-primary">ОК</button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
 </template>
 
 <script>
@@ -109,12 +115,6 @@
                     place: '',
                     size: '',
                     file:'',
-                },
-                box: {
-                    display: "none",
-                },
-                activeForm : {
-                    display: "block"
                 }
             }
         },
@@ -140,10 +140,6 @@
             registerSketch(){
                 console.log('запись прошла успешно!')
                 console.log(this.formSk)
-            },
-            endRec(){
-                this.activeForm.display = "none"
-                this.box.display="block"
             },
             submitFile(){
                 let formData = new FormData();
@@ -200,31 +196,9 @@
 
 <style scoped>
 
-    .as{
+    .example-file{
         padding: 0;
         height: 100%;
-    }
-    .box__endRec{
-        width: auto;
-        height: 160px;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 100px 80px rgba(0, 0, 0, 0.07), 0 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
-
-    }
-    .box__endRec h2{
-        margin: 30px 0;
-    }
-    .box__but{
-        width: 100px;
-        height: 30px;
-        border: none;
-        background-color: rgba(0, 123, 255, 0.65);
-        color: white;
-        border-radius: 10px;
     }
 
 </style>

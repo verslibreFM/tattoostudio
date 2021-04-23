@@ -35,7 +35,6 @@
                                 :disabled="disabledBut">Задать вопрос</button>
                     </div>
                 </form>
-
                 <div class="modal fade" id="modal-faq" tabindex="-1" role="dialog" aria-labelledby="modal-faq" aria-hidden="true" data-backdrop="static" data-keyboard="false">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -99,7 +98,7 @@
     }
 </script>
 
-<style scoped>
+<style>
     label{
         font-family: 'Lora', serif;
     }
