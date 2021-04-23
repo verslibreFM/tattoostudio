@@ -28,12 +28,24 @@ h2{
    margin: 30px 0;
   }
   @include mediaWidth($widthXs) {
-   margin: 20px 0 0 0;
+    margin: 30px 0;
+    font-size: 30px;
   }
 }
 .title-style-other-pages{
   text-align: left;
   margin: 70px 0 70px 200px;
+  @include mediaWidth($widthTablet) {
+    text-align: center;
+  }
+  @include mediaWidth($widthPhone) {
+    text-align: center;
+    margin: 20px 0 30px 0;
+  }
+  @include mediaWidth($widthXs) {
+    text-align: center;
+    font-size: 30px;
+  }
 }
 p{
   font-family: 'Lora', serif;
@@ -41,8 +53,17 @@ p{
 .inner {
   max-width: 1168px;
   margin: 0 auto;
-}
+  @include mediaWidth($widthTablet) {
+    max-width: 1150px;
+  }
+  @include mediaWidth($widthPhone) {
+    max-width: 767px;
+  }
+  @include mediaWidth($widthXs) {
+    max-width: 500px;
+  }
 
+}
 
 /*---------------------------*/
 

@@ -1,13 +1,12 @@
 import Vue from 'vue';
 import Recording from "../vue/Recording.vue";
 import Sketch from "../vue/Sketch.vue";
+import Review from "../vue/Review.vue";
 import Vuelidate from "vuelidate";
 
 require('bootstrap')
-//import 'bootstrap/dist/css/bootstrap.min.css';
-//import Vuelidate from "vuelidate/src";
-Vue.use(Vuelidate)
 
+Vue.use(Vuelidate)
 
 if (document.getElementById('vue-rec')) {
    new Vue({
@@ -18,6 +17,11 @@ if (document.getElementById('vue-sketch')) {
    new Vue({
       render: h => h(Sketch),
    }).$mount('#vue-sketch')
+}
+if (document.getElementById('vue-rev')) {
+   new Vue({
+      render: h => h(Review),
+   }).$mount('#vue-rev')
 }
 
 //page index block services
@@ -45,13 +49,6 @@ but.forEach(function (elem){
       cur.style.display = "none"
    });
 });
-
-// page faq
-$(".questions-item__button").on("click", function(){
-   $(this).next().slideToggle("200");
-});
-
-
 
 
 

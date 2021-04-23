@@ -4,13 +4,13 @@
     <title>Контакты</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
-  <link href="styles/app.css" rel="stylesheet" integrity="sha384-AQESBMHfroXFuAnHxTEa4Y+EpzRxTBmQIbo4ErWqT7xWIwZ6Izi/VAuZb1GdOdCR" crossorigin="anonymous"></head>
+  <link href="styles/app.css" rel="stylesheet" integrity="sha384-q0j7F/u9YUyk6RrHWlIM4GwS3QsBTGqQI0IyA2z0xF3x1OhR85AKWVvb+D2JQNtT" crossorigin="anonymous"></head>
   <body id="zabey">
     <section class="inner">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="/"><img class="logo" src="images/layout/logo.svg" alt="logo"></a>
+            <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="/"><img class="logo" src="images/layout/logo.svg" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -28,34 +28,61 @@
     </section>
     <section class="inner">
       <h2 class="title-style-other-pages">Контакты</h2>
-      <div class="contact contact--display">
-        <div class="contact__info">
-          <div class="block-map-phone align-self">
-            <div class="contact-content contact-content--margin"><img class="contact-content__svg" src="images/index/phone.svg">
+      <div class="contact-container">
+        <!--этот блок работает на sm размере экрана-->
+        <div class="contact__information-field contact__information-field--mobile-version-page-contact">
+          <div class="wrap-content-box wrap-content-box--margin-mobile">
+            <div class="contact-content"><img class="contact-content__svg" src="images/index/phone.svg">
               <p class="contact-content__title">+7 (950) 904-34-25</p>
             </div>
             <div class="contact-content"><img class="contact-content__svg" src="images/index/map.svg">
-              <p class="contact-content__title">Тула, ул.Демидовская <br> (Заречье), дом 74</p>
+              <p class="contact-content__title contact-content__title--margin-top">Тула, ул.Демидовская <br> (Заречье), дом 74</p>
             </div>
           </div>
-          <div class="working-hours align-self">
-            <p class="bold">Время работы :</p>
-            <div class="ini">
-              <p class="bold">Пн-Пт:</p>
+          <div class="working-hours working-hours--margin-mobile">
+            <p class="working-hours__title">Время работы :</p>
+            <div class="working-hours__box">
+              <p class="working-hours__title working-hours__title--color">Пн-Пт:</p>
               <p class="contact-content__title">10:00 - 20:00</p>
             </div>
-            <div class="ini">
-              <p class="bold">Сб-Вс:</p>
+            <div class="working-hours__box">
+              <p class="working-hours__title working-hours__title--color">Сб-Вс:</p>
               <p class="contact-content__title">Выходной</p>
             </div>
           </div>
-          <div class="social-media-page-contact align-self">
-            <p class="bold">Мы в социальных сетях :</p>
+          <div class="map-social-media map-social-media--margin-mobile">
+            <p class="working-hours__title">Мы в социальных сетях :</p>
+            <div class="social-media"><a href="https://www.instagram.com/zabey_tattoostudio/" target="_blank"><img class="social-media__img" src="images/index/instagram.svg"></a><a href="https://vk.com/zabey_tattoostudio" target="_blank"><img class="social-media__img" src="images/index/vk.svg"></a></div>
+          </div>
+        </div>
+        <!--этот блок работает на lg, md размере экрана-->
+        <div class="contact-container__box-info">
+          <div class="wrap-content-box wrap-content-box--margin">
+            <div class="contact-content"><img class="contact-content__svg" src="images/index/phone.svg">
+              <p class="contact-content__title">+7 (950) 904-34-25</p>
+            </div>
+            <div class="contact-content contact-content--margin-top"><img class="contact-content__svg" src="images/index/map.svg">
+              <p class="contact-content__title contact-content__title--margin-top">Тула, ул.Демидовская <br> (Заречье), дом 74</p>
+            </div>
+          </div>
+          <div class="working-hours working-hours--align">
+            <p class="working-hours__title">Время работы :</p>
+            <div class="working-hours__box">
+              <p class="working-hours__title working-hours__title--color">Пн-Пт:</p>
+              <p class="contact-content__title">10:00 - 20:00</p>
+            </div>
+            <div class="working-hours__box">
+              <p class="working-hours__title working-hours__title--color">Сб-Вс:</p>
+              <p class="contact-content__title">Выходной</p>
+            </div>
+          </div>
+          <div class="social-media-page-contact working-hours--align">
+            <p class="working-hours__title">Мы в социальных сетях :</p>
             <div class="social-media"><a href="https://www.instagram.com/zabey_tattoostudio/" target="_blank"><img class="social-media__img" src="images/index/instagram.svg"></a><a href="https://vk.com/zabey_tattoostudio" target="_blank"><img class="social-media__img" src="images/index/vk.svg"></a></div>
           </div>
         </div>
         <div class="contact__map">
-          <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.883084943039!2d37.61873731587154!3d54.217557980170874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413440964d1361c3%3A0x222dfb06b4a302e4!2z0JTQtdC80LjQtNC-0LLRgdC60LDRjyDRg9C7LiwgNzQsINCi0YPQu9CwLCDQotGD0LvRjNGB0LrQsNGPINC-0LHQuy4sIDMwMDA1Nw!5e0!3m2!1sru!2sru!4v1616870716708!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+          <div class="page-contact-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.883084943039!2d37.61873731587154!3d54.217557980170874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413440964d1361c3%3A0x222dfb06b4a302e4!2z0JTQtdC80LjQtNC-0LLRgdC60LDRjyDRg9C7LiwgNzQsINCi0YPQu9CwLCDQotGD0LvRjNGB0LrQsNGPINC-0LHQuy4sIDMwMDA1Nw!5e0!3m2!1sru!2sru!4v1616870716708!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
         </div>
       </div>
     </section>
@@ -67,5 +94,5 @@
         </div>
       </div>
     </div>
-  <script type="text/javascript" src="scripts/app.js" integrity="sha384-SzLTUxXe8wh3pviZlAMyMHDU3DPIgFZ3fs26E+v2oheanhkjSujPYY9kBA/WBTWt" crossorigin="anonymous"></script></body>
+  <script type="text/javascript" src="scripts/app.js" integrity="sha384-GjN8DJUw6CQAxJRZzrC9PSyrQrVP8bNekrPH6nTvR/nd4RylYQMPJPlGYZAHIMcs" crossorigin="anonymous"></script></body>
 </html>
