@@ -7,35 +7,73 @@ append sharedVars
 block content
     section.inner
         h2.title-style-other-pages Часто задаваемые вопросы
-        section.questions
-            div.questions-container
-                div.questions-item
-                    p.questions-item__questions.q Сколько стоит ?
-                    button.questions-item__button.q +
-                    div.questions-item__answer
-                         p.
-                            Почему так дорого? Можно ли сделать подешевле ? На эти вопросы мы постараемся ответить максимально развёрнуто.
-                            Все достаточно легко: чем сложнее татуировка, чем больше ее размер, и чем больше времени тратит на неё мастер, тем она, соответственно, дороже.
-                            Что зачастую влияет на затраченное время ? Это:
-                            1. Сложность рисунка, детали. #[br]Все просто: геометрический круг в 15 см сделать можно за 10 минут, а вот с портретом в этом же размере все будет по-другому.
-                            2. Цвета и градиент. #[br]Чем больше переходов из цвета в цвет, тем дольше времени затрачивает мастер.
-                            3. Место нанесения. #[br]В этом пункте играет роль, в основном, удобство. Согласитесь, удобнее рисовать на предплечье, чем на шее ? Это тоже влияет на время работы.
-                            4. И, наконец, Ваш болевой порог. #[br]Это очень субъективный пункт, ведь у каждого человека болевой порог свой, у каждого разная терпимость. Соответственно, на татуировку затрачивается больше времени из-за перерывов во время работы, переносов сеансов и пр.
+        div.container
+            div.row
+                div.col-10.mx-auto
+                    div#iccordion.accordion
+                        div.card.m-b-0
+                            div.card-header.collapsed(aria-expanded="true" data-toggle="collapse" data-patent="accordion" href="#collapse1")
+                                a.card-title Сколько стоит ?
+                            div.card-block.collapse#collapse1
+                                p Почему так дорого? Можно ли сделать подешевле ? На эти вопросы мы постараемся ответить максимально развёрнуто.
+                                |Все достаточно легко: чем сложнее татуировка, чем больше ее размер, и чем больше времени тратит на неё мастер, тем она, соответственно, дороже.
+                                |Что зачастую влияет на затраченное время ? Это:#[br]
+                                |1. Сложность рисунка, детали.Все просто: геометрический круг в 15 см сделать можно за 10 минут, а вот с портретом в этом же размере все будет по-другому.
+                                |#[br]2. Цвета и градиент. Чем больше переходов из цвета в цвет, тем дольше времени затрачивает мастер.
+                                |#[br]3. Место нанесения. В этом пункте играет роль, в основном, удобство. Согласитесь, удобнее рисовать на предплечье, чем на шее ? Это тоже влияет на время работы.
+                                |#[br]4. И, наконец, Ваш болевой порог. Это очень субъективный пункт, ведь у каждого человека болевой порог свой, у каждого разная терпимость. Соответственно, на татуировку затрачивается больше времени из-за перерывов во время работы, переносов сеансов и пр.
+                                |#[br]В нашей студии минимальная стоимость татуировки составляет 2000 руб. Такая сумма объясняется стоимостью расходных материалов и ценой минимальной загруженности мастера.
+                                |Стоимость полного сеанса (4 часа) на данный момент у мастеров нашей студии варьируется от 5000 руб до 8000 руб.
+                            div.card-header.collapsed(aria-expanded="true" data-toggle="collapse" data-patent="accordion" href="#collapse2")
+                                a.card-title Стоимость эскиза
+                            div.card-block.collapse#collapse2
+                                p В нашей студии есть художница, которая давно с нами работает, имеет большое портфолио и с радостью воплотит в жизнь любую Вашу задумку максимально оригинально и индивидуально! Ее услуги оплачиваются по предоплате. Сумма напрямую зависит от сложности и масштаба работы, в основном варьируется от 1000 до 4000 руб.
+                            div.card-header.collapsed(aria-expanded="true" data-toggle="collapse" data-patent="accordion" href="#collapse3")
+                                a.card-title Коррекция работы
+                            div.card-block.collapse#collapse3
+                                p Мы проводим бесплатную коррекцию своих работ, если она необходима, в течение 2-4 недель после крайнего сеанса.
+                                |Этот период объясняется тем, что раньше делать нельзя - кожа ещё не зажила до конца, а позже также не рекомендуется, ибо новый пигмент будет отличаться от старого. Чужие работы мастеров из других салонов мы не корректируем.
+                            div.card-header.collapsed(aria-expanded="true" data-toggle="collapse" data-patent="accordion" href="#collapse4")
+                                a.card-title Перекрытие старых работ
+                            div.card-block.collapse#collapse4
+                                span В некоторых случаях мы берём на себя ответственность перебить старые татуировки на другую, новую и свежую.
+                                span Но это лишь частные случаи, если идея одинаково понравится и мастеру, и клиенту. По этим вопросам лучше обратиться лично к мастерам за консультацией.
+                            div.card-header.collapsed(aria-expanded="true" data-toggle="collapse" data-patent="accordion" href="#collapse5")
+                                a.card-title В каких стилях работают Ваши мастера ?
+                            div.card-block.collapse#collapse5
+                                p Lorem ipsum dolor sit amet.
+                            div.card-header.collapsed(aria-expanded="true" data-toggle="collapse" data-patent="accordion" href="#collapse6")
+                                a.card-title Как ухаживать за татуировкой ?
+                            div.card-block.collapse#collapse6
+                                p Lorem ipsum dolor sit amet.
+                            div.card-header.collapsed(aria-expanded="true" data-toggle="collapse" data-patent="accordion" href="#collapse7")
+                                a.card-title Сколько сеансов понадобится для моей татуировки ?
+                            div.card-block.collapse#collapse7
+                                p Lorem ipsum dolor sit amet.
+                            div.card-header.collapsed(aria-expanded="true" data-toggle="collapse" data-patent="accordion" href="#collapse8")
+                                a.card-title Насколько у Вас все стерильно ?
+                            div.card-block.collapse#collapse8
+                                p Lorem ipsum dolor sit amet.
+                            div.card-header.collapsed(aria-expanded="true" data-toggle="collapse" data-patent="accordion" href="#collapse9")
+                                a.card-title Делаете ли Вы анестезию ?
+                            div.card-block.collapse#collapse9
+                                p Lorem ipsum dolor sit amet.
+                            div.card-header.collapsed(aria-expanded="true" data-toggle="collapse" data-patent="accordion" href="#collapse10")
+                                a.card-title Как подготовиться к татуировке ?
+                            div.card-block.collapse#collapse10
+                                p Lorem ipsum dolor sit amet.
+                            div.card-header.collapsed(aria-expanded="true" data-toggle="collapse" data-patent="accordion" href="#collapse11")
+                                a.card-title Что ЗАПРЕЩАЕТСЯ делать перед сеансом ?
+                            div.card-block.collapse#collapse11
+                                p Lorem ipsum dolor sit amet.
+                            div.card-header.collapsed(aria-expanded="true" data-toggle="collapse" data-patent="accordion" href="#collapse12")
+                                a.card-title Что, если я не могу прийти на запланированный сеанс ?
+                            div.card-block.collapse#collapse12
+                                p Lorem ipsum dolor sit amet.
 
-                            В нашей студии минимальная стоимость татуировки составляет 2000 руб. Такая сумма объясняется стоимостью расходных материалов и ценой минимальной загруженности мастера.
-                            Стоимость полного сеанса (4 часа) на данный момент у мастеров нашей студии варьируется от 5000 руб до 8000 руб.
-                div.questions-item
-                    p.questions-item__questions.q Стоимость эскиза
-                    button.questions-item__button.q +
-                    div.questions-item__answer
-                        p.
-                            В нашей студии есть художница, которая давно с нами работает, имеет большое портфолио и с радостью воплотит в жизнь любую Вашу задумку максимально оригинально и индивидуально! Ее услуги оплачиваются по предоплате. Сумма напрямую зависит от сложности и масштаба работы, в основном варьируется от 1000 до 4000 руб.
-                div.questions-item
-                    p.questions-item__questions.q Коррекция работы
-                    button.questions-item__button.q +
-                    div.questions-item__answer
-                        p.
-                            Мы проводим бесплатную коррекцию своих работ, если она необходима, в течение 2-4 недель после крайнего сеанса. Этот период объясняется тем, что раньше делать нельзя - кожа ещё не зажила до конца, а позже также не рекомендуется, ибо новый пигмент будет отличаться от старого. Чужие работы мастеров из других салонов мы не корректируем.
+
+            //div.questions-container
+
                 div.questions-item
                     p.questions-item__questions Перекрытие старых работ
                     button.questions-item__button +
@@ -126,11 +164,7 @@ block content
 
                             Давайте уважать личное время друг друга - ведь это так просто!
 
-            div.form-faq
+            //div.form-faq
                 h3.title-for-form Остались вопросы ?
-                form.form
-                    input.input.input--size(type='text', placeholder='имя')
-                    input.input.input--size(type='text', placeholder='адрес эл.почты')
-                    textarea.input(cols=40, rows=10, placeholder='Ваш вопрос')
-                    input.input.input-sub(type='submit', value='отправить')
+
 

@@ -74,3 +74,15 @@
 .input-sub:hover{
   background-color: #7a9bd2;
 }
+.accordion .card-header:after{
+  content: "\2212";
+  float: right;
+  font-weight: bold;
+  font-size: 20px;
+  color: #7AA1D2;
+}
+.accordion .card-header.collapsed:after{
+  content: "\002B";
+}
+
+
