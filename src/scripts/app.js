@@ -1,8 +1,10 @@
 import Vue from 'vue';
 import Recording from "../vue/Recording.vue";
 import Sketch from "../vue/Sketch.vue";
+import Question from "../vue/Question.vue";
 import Review from "../vue/Review.vue";
 import Vuelidate from "vuelidate";
+
 
 require('bootstrap')
 
@@ -18,11 +20,18 @@ if (document.getElementById('vue-sketch')) {
       render: h => h(Sketch),
    }).$mount('#vue-sketch')
 }
-if (document.getElementById('vue-rev')) {
+if (document.getElementById('vue-que')) {
+   new Vue({
+      render: h => h(Question),
+   }).$mount('#vue-que')
+}
+if (document.getElementById('vue-rew')) {
    new Vue({
       render: h => h(Review),
-   }).$mount('#vue-rev')
+   }).$mount('#vue-rew')
 }
+
+
 
 //page index block services
 let block = document.querySelectorAll('.block-decor');
